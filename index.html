@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="bg" src="ju.jpg" alt="Jadavpur University" srcset="">
+    <div class="container">
+        <h1>Please fill out this form to avail bus services</h1>
+        <p>Enter Your Details Below</p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter Your name" required>
+            <input type="text" name="age" id="age" placeholder="Enter Your age" required>
+            <input type="text" name="gender" id="gender" placeholder="Enter Your gender" required>
+            <input type="email" name="email" id="email" placeholder="Enter Your email" required>
+            <input type="phone" name="phone" id="phone" placeholder="Enter Your phone no." required>
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter more info here"></textarea>
+            <button class="btn" onclick="show_alert();">Submit</button>
+            <button class="btn">Reset</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    <!-- INSERT INTO `bus` (`SNO`, `NAME`, `AGE`, `GENDER`, `EMAIL`, `PHONE`, `OTHER`, `DATE`) VALUES ('2', 'Sagnik Roy', '21', 'Male', 'sroy20442@gmail.com', '7980243364', 'hi there', current_timestamp()); -->
+</body>
+</html>
